@@ -39,6 +39,10 @@ def index(request, *args, **kwargs):
             todoDel.delete()
             return redirect('/')
 
+        if 'taskDeleteAll' in request.POST:
+            TodoList.objects.all().delete()
+            return redirect('/')
+
 
     return render(request, "index.html", context)
 

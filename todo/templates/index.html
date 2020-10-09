@@ -12,7 +12,7 @@
 <body>
 <div django-app="TaskManager">        
   <div class="container">
-            <div class="content">
+            <div class="content form-group">
             <h1>TodoApp</h1>
             <p class="tagline">a Django todo app</p>
             <form action="" method="post">
@@ -32,12 +32,12 @@
                     <label for="category">Category</label>
                 </div>
                 <div class="inputContainer half last right">
-                    <input type="date" id="dueDate" class="taskDate" name="date">
+                    <input type="date" id="dueDate" class="taskDate" name="date" >
                     <label for="dueDate">Due Date</label>
                 </div>
                 <div class="row">
                     <button class="taskAdd" name="taskAdd" type="submit"><i class="fa fa-plus icon"></i>Add task</button>
-                    {# <button class="taskDelete" name="taskDelete" formnovalidate="" type="submit"><i class="fa fa-trash-o icon"></i>Delete Tasks</button> #}
+                    <button class="taskDeleteAll" name="taskDeleteAll" formnovalidate="" type="submit"><i class="fa fa-trash-o icon"></i>Delete All Tasks</button>
                 </div>
             
             

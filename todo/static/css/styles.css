@@ -161,9 +161,10 @@ button {
 .taskAdd:hover {
     background: #303030;
 }
-.taskDelete {
+.taskDelete, .taskDeleteAll {
     background: #e74c3c;
     padding-left: 30px;
+    margin-left: 10px;
 }
 .taskDelete:hover {
     background: #c0392b;
@@ -296,4 +297,4 @@ footer a {
     background: #fff;
     border: none;
     outline: none;
-    padding: 0 100px;
+    padding: 0 100px;}
